@@ -1,9 +1,16 @@
-//
-//  LagziLogger.cpp
-//  Playground
-//
-//  Created by Omer Lagziel on 22/03/2020.
-//  Copyright © 2020 Lagzi. All rights reserved.
-//
-
 #include "LagziLogger.hpp"
+
+void LagziLogger::Log(std::wstring message)
+{
+    std::wcout << message << std::endl;
+}
+
+void LagziLogger::LogError(std::wstring message)
+{
+    LagziLogger::Log(std::wstring(L"ERROR: ") + message);
+}
+
+void LagziLogger::LogDebug(std::wstring message)
+{
+    LagziLogger::Log(std::wstring(L"DEBUG: ") + message);
+}

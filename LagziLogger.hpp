@@ -1,14 +1,11 @@
-//
-//  LagziLogger.hpp
-//  Playground
-//
-//  Created by Omer Lagziel on 22/03/2020.
-//  Copyright © 2020 Lagzi. All rights reserved.
-//
+#pragma once
+#include <iostream>
 
-#ifndef LagziLogger_hpp
-#define LagziLogger_hpp
-
-#include <stdio.h>
-
-#endif /* LagziLogger_hpp */
+class LagziLogger {
+public:
+    static void LogError(std::wstring message);
+    static void LogDebug(std::wstring message);
+    
+private:
+    static void Log(std::wstring message);
+};
