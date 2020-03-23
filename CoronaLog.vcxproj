@@ -148,9 +148,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CoronaLog.cpp" />
+    <ClCompile Include="NaorLogger\NaorLogger.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Common.hpp" />
+    <ClInclude Include="NaorLogger\NaorLogger.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
